@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+		
+		#wrap {
+			
+		}
+	</style>
+</head>
+<body>
+<div id="wrap"></div>
+</body>
+<script>
+	function repeat(arr) {
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = i+1; j < arr.length; j++) {
+                
+                if (arr[j]=== arr[i]){
+                    //删掉j号元素
+	                arr.splice(j,1)
+	                j--;
+                }
+	            
+            }
+	        
+        }
+        return arry;
+    }
+	
+	
+	var arry = ['a','b','a','a','c','d','a','b','c','g'];
+	var result = repeat(arry);
+	document.write(result)
+	
+</script>
+</html>
